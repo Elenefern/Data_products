@@ -1,0 +1,20 @@
+---
+title: "Leaflet Map"
+date: "01/09/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Date: 01 September 2020
+
+
+```{r}
+library(leaflet)
+
+my_map = leaflet() %>% addTiles() %>% addMarkers(lat=c(-50.471054,-34.603722 ),lng= c(-73.057396,-58.381592 )); my_map
+
+
+```
