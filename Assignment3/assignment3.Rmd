@@ -1,0 +1,17 @@
+---
+title: "Developing data products: Assignment 3"
+date: "02/09/2020"
+output: ioslides_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+library(plotly)
+```
+
+## Plotly 
+
+```{r}
+plot_ly(mtcars, x = mtcars$wt,y = mtcars$mpg,mode="markers", color = as.factor(mtcars$cyl), type = 'scatter') %>% layout(title = 'Mtcars weight vs MPG', xaxis = list(title = 'Weigth'), yaxis = list(title='MPG'), legend = list(title=list(text='Cylinder number')))
+```
+
